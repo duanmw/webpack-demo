@@ -9,6 +9,7 @@
     "watch": "webpack --watch"
   },
   "devDependencies": {
-    "html-webpack-plugin": "^5.5.0"
+    "html-webpack-plugin": "^5.5.0",
+    "webpack-dev-server": "^4.9.3"
   }
 }

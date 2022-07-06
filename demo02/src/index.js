@@ -1,6 +1,13 @@
 import _ from 'lodash';
 import './style.css';
+import './style.less';
 import Icon from './favicon.png';
+const imgObj = {}
+const requireContext = require.context("./assets", false,/./);
+requireContext.keys().forEach(item => {
+  imgObj[item] = requireContext(item);
+});
+
 function component() {
   const element = document.createElement('div');
 
@@ -12,6 +19,13 @@ function component() {
   myIcon.src = Icon;
 
   element.appendChild(myIcon);
+
+  console.log(imgObj);
+  class Person{
+    age=16;
+  }
+  console.log(new Person().age)
+  
   return element;
 }
 

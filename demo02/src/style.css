@@ -9,5 +9,5 @@
 .hello {
     color: red;
     font-family: 'MyFont';
-    background: url('./favicon.png') no-repeat;
+    background: url('./site-logo.svg') no-repeat;
 }

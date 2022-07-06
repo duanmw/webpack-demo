@@ -38,7 +38,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 // #region
 module.exports = {
-    // mode: 'development',
+    mode: 'development',
     entry: {
         index: './src/index.js',
         another: './src/another-module.js'
@@ -53,6 +53,10 @@ module.exports = {
             title: "Development",
         }),
     ],
+    devServer: {
+        static: './dist',
+        hot: true,
+    },
     optimization: {
         splitChunks: {
             chunks: 'all',
